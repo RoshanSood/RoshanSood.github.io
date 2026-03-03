@@ -72,18 +72,13 @@
 
     /* === SIDEBAR === */
     .sidebar { width: 260px; min-width: 260px; flex-shrink: 0; }
-    .sidebar .author__avatar .avatar-placeholder {
+    .sidebar .author__avatar img {
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #52adc8 0%, #2d7d92 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      object-fit: cover;
+      display: block;
       margin: 0 auto;
-      color: #fff;
-      font-size: 4em;
-      font-weight: 700;
     }
     .sidebar .author__content { text-align: center; padding: 0.5em 0; }
     .sidebar .author__name {
@@ -184,7 +179,7 @@
     @media (max-width: 768px) {
       .page-wrapper { flex-direction: column; padding: 1em; }
       .sidebar { width: 100%; min-width: 0; margin-bottom: 1em; }
-      .sidebar .author__avatar .avatar-placeholder { width: 150px; height: 150px; font-size: 3em; }
+      .sidebar .author__avatar img { width: 150px; height: 150px; }
       .masthead__inner-wrap { flex-wrap: wrap; }
       .visible-links { flex-wrap: wrap; }
     }
@@ -198,10 +193,10 @@
   <!-- ===== MASTHEAD ===== -->
   <header class="masthead">
     <div class="masthead__inner-wrap">
-      <a class="site-title" href="index.html">Roshan's Homepage</a>
+      <a class="site-title" href="homepage.html">Roshan's Homepage</a>
       <nav>
         <ul class="visible-links">
-          <li><a href="index.html">Roshan's Homepage</a></li>
+          <li><a href="homepage.html">Roshan's Homepage</a></li>
           <li><a href="index.html">Biography</a></li>
           <li><a href="publications.html">Publications</a></li>
           <li><a href="contact.html" class="active">Contact</a></li>
@@ -216,18 +211,18 @@
     <!-- ===== SIDEBAR ===== -->
     <aside class="sidebar">
       <div class="author__avatar">
-        <div class="avatar-placeholder">RS</div>
+        <img src="citations.png" alt="Roshan Sood">
       </div>
       <div class="author__content">
         <h3 class="author__name">Roshan Sood</h3>
         <p class="author__bio">B.S. Computer Science, University of California, San Diego</p>
       </div>
       <div class="author__urls-wrapper">
-        <button class="btn--inverse" id="followBtn">Follow</button>
+        <a class="btn--inverse" href="https://www.linkedin.com/in/roshan-sood-8a0aa3248/" target="_blank" rel="noopener">Follow</a>
         <ul class="author__urls" id="authorUrls">
           <li><i class="fa-solid fa-location-dot"></i> San Diego, California</li>
           <li><i class="fa-solid fa-building-columns"></i> UC San Diego</li>
-          <li><a href="mailto:roshansood99@gmail.com"><i class="fa-solid fa-envelope" style="color:#666;"></i> Email</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#84f6ebf7ece5eaf7ebebe0bdbdc4e3e9e5ede8aae7ebe9"><i class="fa-solid fa-envelope" style="color:#666;"></i> Email</a></li>
           <li><a href="https://www.linkedin.com/in/roshan-sood-8a0aa3248/"><i class="fa-brands fa-linkedin" style="color:#0077b5;"></i> LinkedIn</a></li>
           <li><a href="https://github.com/RoshanSood"><i class="fa-brands fa-github" style="color:#333;"></i> Github</a></li>
           <li><a href="https://scholar.google.com/citations?user=-xrf1okAAAAJ&amp;hl=en"><i class="ai ai-google-scholar" style="color:#4285f4;"></i> Google Scholar</a></li>
@@ -242,7 +237,7 @@
 
       <p>Department of Computer Science and Engineering, University of California, San Diego</p>
 
-      <p>Email: <a href="mailto:roshansood99@gmail.com">roshansood99@gmail.com</a></p>
+      <p>Email: <a href="/cdn-cgi/l/email-protection#c3b1acb0aba2adb0acaca7fafa83a4aea2aaafeda0acae"><span class="__cf_email__" data-cfemail="a3d1ccd0cbc2cdd0ccccc79a9ae3c4cec2cacf8dc0ccce">[email&#160;protected]</span></a></p>
 
       <p>Phone: (760)-334-3971</p>
 
@@ -269,15 +264,5 @@
     </div>
   </footer>
 
-  <script>
-    const followBtn = document.getElementById('followBtn');
-    const authorUrls = document.getElementById('authorUrls');
-    let urlsVisible = true;
-    followBtn.addEventListener('click', function() {
-      urlsVisible = !urlsVisible;
-      authorUrls.style.display = urlsVisible ? 'block' : 'none';
-    });
-  </script>
-
-</body>
-</html>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    const followBtn = document.getElementById
